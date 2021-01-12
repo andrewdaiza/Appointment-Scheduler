@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View_Controller.EditAppointmentScreenController">
+   <children>
+      <VBox layoutX="218.0" layoutY="92.0" prefHeight="245.0" prefWidth="185.0" spacing="15.0">
+         <children>
+            <ComboBox fx:id="customerSelect" disable="true" prefHeight="36.0" prefWidth="185.0" />
+            <ComboBox fx:id="consultantSelect" prefHeight="38.0" prefWidth="185.0" />
+            <ChoiceBox fx:id="typeSelect" prefHeight="35.0" prefWidth="185.0" />
+            <HBox prefHeight="34.0" prefWidth="185.0">
+               <children>
+                  <ChoiceBox fx:id="startTimeSelect" prefHeight="27.0" prefWidth="254.0" />
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="160.0" prefHeight="34.0" prefWidth="185.0">
+               <children>
+                  <ChoiceBox fx:id="endTimeSelect" prefHeight="27.0" prefWidth="193.0" />
+               </children>
+            </HBox>
+            <DatePicker fx:id="dateSelect" prefHeight="35.0" prefWidth="185.0" />
+         </children>
+      </VBox>
+      <VBox layoutX="28.0" layoutY="89.0" prefHeight="245.0" prefWidth="166.0" spacing="10.0">
+         <children>
+            <Label prefHeight="35.0" prefWidth="138.0" text="Select Customer">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="10.0" layoutY="10.0" prefHeight="35.0" prefWidth="143.0" text="Select Consultant">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label prefHeight="35.0" prefWidth="138.0" text="Type">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label prefHeight="35.0" prefWidth="138.0" text="Start Time">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="10.0" layoutY="160.0" prefHeight="35.0" prefWidth="138.0" text="End Time">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label prefHeight="35.0" prefWidth="138.0" text="Date">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <Label layoutX="99.0" layoutY="16.0" prefHeight="55.0" prefWidth="304.0" text="Edit Appointment">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+      <Button fx:id="saveApptButton" layoutX="47.0" layoutY="344.0" mnemonicParsing="false" onMouseClicked="#saveAppt" prefHeight="34.0" prefWidth="91.0" text="Save" />
+      <Button fx:id="cancelApptButton" layoutX="358.0" layoutY="344.0" mnemonicParsing="false" onMouseClicked="#cancelAppt" prefHeight="34.0" prefWidth="91.0" text="Cancel" />
+   </children>
+</AnchorPane>
